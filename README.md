@@ -1,6 +1,6 @@
-# ✅ Todo list App using React & Redux 🤞
+# ✅ Todo list App using Used React and Redux Hooks 🤞
 
-## Our app's User Stories ✌️
+## Our app's User Stories  🙏🏼
 Defining user stories before we begin our work will help us focus our work. Our app should fulfill the following stories:
 
 As a user & admin, u can
@@ -10,7 +10,7 @@ As a user & admin, u can
 * delete any task.
 
 
-## Project Setup
+## Project Setup✌️
 ## Technologies
 * React js
 * Redux for state managment 
