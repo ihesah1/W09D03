@@ -1,6 +1,6 @@
-# ✅ Todo App
+# ✅ Todo list App using React & Redux 🤞
 
-## Our app's User Stories 😉
+## Our app's User Stories ✌️
 Defining user stories before we begin our work will help us focus our work. Our app should fulfill the following stories:
 
 As a user & admin, u can
