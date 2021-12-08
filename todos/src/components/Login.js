@@ -6,7 +6,6 @@ import  {logIn} from '../reducer/action'
 const Login = () => {
   const SignIn = useSelector(state => state.SignIn)
   const dispatch = useDispatch()
-
   const navigate = useNavigate();
   const BASE_URL = process.env.REACT_APP_BASE_URL;
   const [err, setErr] = useState("");
@@ -39,9 +38,6 @@ const Login = () => {
       <h1>Login</h1>
 
       <form onSubmit={login}>
-        <label htmlFor="email">Email:</label>
-        <input type="email" name="email" />
-        <p>OR</p>
         <label htmlFor="username">Username:</label>
         <input type="text" name="username" />
         <label htmlFor="password">Password:</label>
@@ -54,7 +50,7 @@ const Login = () => {
           navigate("/");
         }}
       >
-        Back
+        home
       </button>
     </div>
   );

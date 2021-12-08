@@ -50,7 +50,7 @@ const Nav = () => {
               to="signUp"
               style={{ color: "white", textDecoration: "none" }}
             >
-              Sign up
+              Register
             </Link>
           </button>
           <button onClick={todos}>Tasks</button>

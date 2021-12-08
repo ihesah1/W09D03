@@ -30,5 +30,4 @@ const login = (state = instialState,action )=>{ //keys action
    }
 
 }
-
 export default login ;

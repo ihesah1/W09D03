@@ -1,4 +1,4 @@
-import { createStore, combineReducers } from 'redux'
+import { createStore, combineReducers } from 'redux' //combine all reducers
 import { composeWithDevTools} from 'redux-devtools-extension' //middleware
 import login from './login'
 import LogOut from './logout'
@@ -9,5 +9,4 @@ const reducers = combineReducers({ login, LogOut, TASK })
 const store= ()=> {
     return createStore(reducers, composeWithDevTools());
 }
-
 export default store();

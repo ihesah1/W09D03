@@ -1,5 +1,5 @@
 .Nav {
-  background-color:rgba(218, 112, 214, 0.466);
+  background-color:rgba(212, 142, 211, 0.507);
   
   height: 100vh;
   padding: 5%;
@@ -8,23 +8,20 @@
 }
 button {
   padding: 12px 20px;
-  background-color:slategrey;
-  margin: 30px;
-  
   font-family: sans-serif;
-border-radius: 6px;
 text-align: center;
-display:flexbox;
 align-items: center;
 line-height: 22px;
 border: none;
+color: white;
+background-color: rgba(226, 26, 149, 0.281);
+border-radius: 5px;
+font-size: larger;
+display: block;
+padding: 8px;
+margin: 10px auto;
 
 }
 
-.admin{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 30px;
-background-color: beige;
-}
+
 

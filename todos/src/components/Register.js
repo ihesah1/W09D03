@@ -36,7 +36,7 @@ const Register = () => {
         <input type="email" name="email" />
         <label htmlFor="password">Password:</label>
         <input type="password" name="password" />
-        <button type="submit">Sign up</button>
+        <button type="submit"> Register </button>
       </form>
       <p>{err}</p>
       <button

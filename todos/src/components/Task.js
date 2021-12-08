@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+
+import { useSelector, useDispatch } from "react-redux";// use selector to retrive state from reducer 
 import  {TASK} from '../reducer/action'
+
+
 
 const Post = () => {
   const SignIn = useSelector(state => state.SignIn)
   const mytodo = useSelector(state => state.TASK)
   console.log(mytodo);
   const dispatch = useDispatch()
-
   const navigate = useNavigate();
   const BASE_URL = process.env.REACT_APP_BASE_URL;
   const token = SignIn.token;
   const [data, setData] = useState([]);
-
+  ///GET posts
   const getPosts = async () => {
     try {
       const result = await axios.get(`${BASE_URL}/posts`, {
@@ -26,7 +28,6 @@ const Post = () => {
       console.log(error);
     }
   };
-
   const del = async (id) => {
     try {
       const result = await axios.delete(`${BASE_URL}/post/${id}`, {
@@ -38,6 +39,7 @@ const Post = () => {
     }
   };
 
+
   const newTodo = async (e) => {
     try {
       e.preventDefault();
@@ -47,7 +49,8 @@ const Post = () => {
           desc: e.target.todo.value,
         },
         {
-          headers: { Authorization: `bearer ${token}` },
+          ///send token to authenticate the (user)
+          headers: { Authorization: `bearer ${token}` }, 
         }
       );
       e.target.todo.value = "";
@@ -73,7 +76,7 @@ const Post = () => {
         return (
           <div key={item._id}>
             <h2 style={{ display: "inline" }}>{item.desc}</h2>
-            <button onClick={() => del(item._id)}>x</button>
+            <button onClick={() => del(item._id)}> X </button>
             <br />
           </div>
         );
