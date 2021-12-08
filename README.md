@@ -1,6 +1,6 @@
 # ✅ Todo App
 
-## Our app's user stories 😉
+## Our app's User Stories 😉
 Defining user stories before we begin our work will help us focus our work. Our app should fulfill the following stories:
 
 As a user & admin, I can
@@ -30,7 +30,13 @@ As a user & admin, I can
 /src
 * index.js: the entry point file for the application. It renders the main <App> component.
 * App.js: the main application component.
-* index.css: styles for the complete application
+* App.css: styles for the complete application
+* Components   
+   * Register.js
+   * Login.js
+   * Nav.js
+   * admin.js
+   * Task.js
    
  #### Then first thing is to create a reducer with a default that returns the state.
 * redux/reducer.js
@@ -92,4 +98,11 @@ Now just wrap your component with this Provider and pass store in the Provider j
 
   </React.StrictMode>,
   document.getElementById("root")
-); ```
+); 
+   ```
+
+
+   
+   
+![image](https://user-images.githubusercontent.com/92258765/145149510-2327ac07-3fc7-42dc-b51e-83c21b04792b.png)
+   
