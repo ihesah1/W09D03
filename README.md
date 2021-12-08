@@ -1,4 +1,4 @@
-# ✅ Todo list App using Used React and Redux Hooks 🤞
+# ✅ Todo list App using Used React and Redux Hooks 📝
 
 ## Our app's User Stories  🙏🏼
 Defining user stories before we begin our work will help us focus our work. Our app should fulfill the following stories:
@@ -10,7 +10,7 @@ As a user & admin, u can
 * delete any task.
 
 
-## Project Setup✌️
+## Project Setup ✌️
 ## Technologies
 * React js
 * Redux for state managment 
@@ -38,7 +38,7 @@ As a user & admin, u can
    * admin.js
    * Task.js
    
- #### Then first thing is to create a reducer with a default that returns the state.
+ #### Then first thing is to create a reducer with a default that returns the state. 🤞
 * redux/reducer.js
 ```let reducer = (state, action) => {
   switch (action.type) {
